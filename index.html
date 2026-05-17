@@ -1,0 +1,149 @@
+export default function LovePage() {
+  const fotos = [
+    "SUA_FOTO_1",
+    "SUA_FOTO_2",
+    "SUA_FOTO_3",
+    "SUA_FOTO_4",
+    "SUA_FOTO_5"
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-rose-100 via-pink-50 to-white text-gray-800">
+
+      {/* Música */}
+      <audio autoPlay loop controls className="fixed bottom-4 right-4 z-50">
+        <source
+          src="COLE_AQUI_O_LINK_DA_MUSICA"
+          type="audio/mp3"
+        />
+      </audio>
+
+      <div className="max-w-6xl mx-auto px-6 py-12">
+
+        {/* Título */}
+        <div className="text-center mb-16">
+          <h1 className="text-5xl md:text-7xl font-bold text-rose-600 drop-shadow-lg">
+            Kauã ❤️ Camilly
+          </h1>
+
+          <p className="mt-6 text-xl md:text-2xl text-gray-700 leading-10">
+            Desde que você entrou na minha vida, tudo ficou mais bonito.
+          </p>
+        </div>
+
+        {/* Fotos */}
+        <div className="grid md:grid-cols-3 gap-6 mb-16">
+          {fotos.map((foto, index) => (
+            <div
+              key={index}
+              className="rounded-3xl overflow-hidden shadow-2xl hover:scale-105 transition duration-300"
+            >
+              <img
+                src={foto}
+                alt="Foto do casal"
+                className="w-full h-[420px] object-cover"
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Carta */}
+        <div className="bg-white/70 backdrop-blur-lg rounded-3xl p-8 shadow-2xl mb-14">
+          <h2 className="text-3xl font-bold text-rose-500 mb-6">
+            Uma mensagem pra você 💌
+          </h2>
+
+          <p className="text-lg leading-9 text-gray-700">
+            Oi, meu amor. Hoje venho te dizer aquilo que falo todos os dias:
+            <span className="font-bold text-rose-500"> EU TE AMO ❤️</span>
+
+            <br /><br />
+
+            Você veio como uma luz na minha vida e, desde que entrou nela,
+            tudo mudou. Me apaixonei por você e hoje percebo que é com você
+            que quero me casar e construir uma família linda.
+
+            <br /><br />
+
+            Eu sei que temos nossos momentos difíceis e nossas dificuldades,
+            mas é justamente nesses momentos que percebo que é ao seu lado
+            que quero viver a minha vida. Você consegue deixar tudo mais leve,
+            mais bonito e mais colorido.
+
+            <br /><br />
+
+            Quando eu te vejo, sinto como se o mundo parasse. O tempo passa
+            tão rápido quando estou com você, e eu fico preocupado só de
+            pensar em ter que sair do seu lado.
+
+            <br /><br />
+
+            Só quero que saiba que eu te amo muito e que, futuramente,
+            teremos nosso menininho de cabelo cacheado igual ao seu quando
+            ele fica natural. ❤️
+
+            <br /><br />
+
+            <span className="font-bold text-rose-500">
+              Eu te amo, Camilly.
+            </span>
+          </p>
+        </div>
+
+        {/* Cards */}
+        <div className="grid md:grid-cols-2 gap-8 mb-14">
+
+          <div className="bg-rose-500 text-white rounded-3xl p-8 shadow-2xl">
+            <h3 className="text-2xl font-bold mb-4">
+              ✨ Nosso começo
+            </h3>
+
+            <p className="leading-8 text-lg">
+              Tudo começou de forma simples…
+              e sem perceber, você virou
+              a melhor parte da minha vida.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-3xl p-8 shadow-2xl">
+            <h3 className="text-2xl font-bold text-rose-500 mb-4">
+              ⏳ Nosso tempo juntos
+            </h3>
+
+            <p className="text-lg leading-8 text-gray-700">
+              Cada segundo ao seu lado vale a pena.
+              <br /><br />
+
+              Nossa data:
+              <br />
+
+              <span className="font-bold text-rose-500 text-2xl">
+                04/07/2025 ❤️
+              </span>
+            </p>
+          </div>
+        </div>
+
+        {/* Final */}
+        <div className="bg-gradient-to-r from-rose-500 to-pink-500 rounded-3xl p-10 text-center text-white shadow-2xl">
+
+          <h2 className="text-4xl font-bold mb-6">
+            Você é meu lugar favorito no mundo ❤️
+          </h2>
+
+          <p className="text-xl leading-9 max-w-3xl mx-auto">
+            Não importa o que aconteça,
+            eu sempre vou escolher você.
+          </p>
+        </div>
+
+        {/* Rodapé */}
+        <div className="text-center mt-14 text-gray-600">
+          <p className="text-lg">
+            Feito com amor por Kauã 💖
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
